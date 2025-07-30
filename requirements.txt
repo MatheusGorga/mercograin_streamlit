@@ -1,0 +1,8 @@
+# requirements.txt
+
+streamlit
+gspread
+pandas
+openpyxl
+python-docx
+fpdf2
