@@ -4,5 +4,5 @@ streamlit
 gspread
 pandas
 openpyxl
-python-docx
-fpdf2
+reportlab
+Pillow

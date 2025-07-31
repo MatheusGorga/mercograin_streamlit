@@ -22,18 +22,18 @@ estilos.aplicar_estilo_padrao()
 
 # --- Lógica de Login (MODO DESENVOLVIMENTO - LOGIN DESATIVADO) ---
 # O bloco de login original foi comentado para agilizar o desenvolvimento.
-if not controle_acesso.usuario_logado():
-      controle_acesso.login()
-      st.stop()
+# if not controle_acesso.usuario_logado():
+#       controle_acesso.login()
+#       st.stop()
 
 # Força um usuário "ADMIN" logado para não precisar fazer login toda hora.
 # Lembre-se de reativar o bloco de login acima para o ambiente de produção!
-# if "usuario_logado" not in st.session_state:
-#     st.session_state["usuario_logado"] = {
-#        "ID": "ADMIN",
-#         "Nome": "Desenvolvedor",
-#          "Email": "dev@test.com"
-#      }
+if "usuario_logado" not in st.session_state:
+    st.session_state["usuario_logado"] = {
+       "ID": "ADMIN",
+        "Nome": "Desenvolvedor",
+         "Email": "dev@test.com"
+     }
 
 # --- Construção do Menu Lateral Dinâmico ---
 st.sidebar.image("imagens/logo.png", use_container_width=True) # Adicione sua logo em /imagens/logo.png
